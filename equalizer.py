@@ -14,7 +14,9 @@ def main(filename, r):
     a = np.array(img.getdata(), dtype=np.uint8).reshape(img.size[::-1])
     b = np.zeros(img.size[::-1], dtype=np.uint8)
  
-   # код сюда ....
+    # код сюда ....
+
+    каждый пиксель цвета k заменить на число 255*(% пикселей темнее k)
 
     
     newimg = Image.fromarray(b);
